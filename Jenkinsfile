@@ -22,7 +22,7 @@ node {
         }
       	stage ('Deploy') {
             sh "echo 'shell scripts to deploy to server...'"
-	    sh "docker image ls"
+	    sh "sudo docker image ls"
       	}
     } catch (err) {
         currentBuild.result = 'FAILED'
